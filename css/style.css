@@ -1,0 +1,468 @@
+/*  start global   */
+*{ box-sizing: border-box; }
+body { margin: 0 ; padding : 0; background-color: #1c1e21; }
+/* width */
+::-webkit-scrollbar {width: 7px;}
+/* Track */
+::-webkit-scrollbar-track { box-shadow: outset 0 0 2px #a9a9a933; border-radius: 5px;}
+/* Handle */
+::-webkit-scrollbar-thumb {  background: #a9a9a9 ;  border-radius: 5px; }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {  background: #a9a9a94f; }
+ul
+{
+  margin-bottom: 0;
+}
+.pages-icon i
+{
+  font-size: 20px;
+
+  width: 100px;
+  height: 50px;
+
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+ img
+{
+  cursor: pointer;
+}
+.pages-icon i:hover
+{
+  background-color: #a9a9a933;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.pages-icon i:nth-child(1).active
+{
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+.pages-icon i:nth-child(2).active
+{
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+.pages-icon i:nth-child(3).active
+{
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+.pages-icon i:nth-child(4).active
+{
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+.pages-icon i:nth-child(5).active
+{
+  border-bottom: 3px solid blue;
+  color: blue;
+}
+/*  end global   */
+/*  start header */
+header
+{
+  background-color: #1c1e21;
+  border-bottom: 1px solid #ccc;
+  z-index: -1;
+}
+.name-img
+{
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.name-img:hover
+{
+  background-color: #a9a9a933;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.settings .settings-icons i,
+.see-more .fa-angle-down,
+.see-less .fa-angle-up,
+.head .fa-xmark
+{
+  font-size: 17px;
+  background-color: #a9a9a933;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.settings .settings-icons i:hover,
+.more .see-more .fa-angle-down:hover,
+.head .fa-xmark:hover
+{
+  background-color: #a9a9a94f;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+.search
+{
+  width: 70%;
+  height: 70%;
+  vertical-align: middle;
+  padding: 5px;
+  background-color: #a9a9a94f;
+  border-radius: 50px;
+}
+.search-bar
+{
+  text-align: right;
+  background-color:#a9a9a94f;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.search-bar1
+{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 50px;
+  margin-right: 5px;
+  text-align: right;
+  background-color: #a9a9a900;
+  cursor: pointer;
+}
+.search-bar1:focus
+{
+  outline: none;
+
+}
+.search-bar:hover,
+.search:hover
+{
+  background-color: DarkGray;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.logo-search i
+{
+font-size: 40px;
+color: blue;
+text-align: center;
+}
+.logo-search  .search i
+{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+/*  end header  */
+/* start content*/
+.content .menu,
+.content .messenger
+{
+  padding: 10px;
+  overflow-y: hidden;
+}
+.content .menu:hover,
+.content .messenger:hover
+{
+  overflow-y: scroll;
+  transition: 0.5s all ease-in-out;
+}
+
+.content .posts
+{
+}
+
+.content .menu
+{
+  position:fixed;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  width: 25%;
+}
+.content .messenger
+{
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 23%;
+}
+
+.content .posts
+{
+  position: absolute;
+  bottom: 0;
+  top: 60px;
+  right: 32%;
+  left: 32.5%;
+
+}
+.menu-content
+{
+  border-bottom: 0.5px solid #ccc;
+  padding-bottom: 12px;
+}
+.menu-content .profile,
+.menu-content .friends,
+.menu-content .saved,
+.menu-content .groups,
+.menu-content .market,
+.menu-content .video,
+.menu-content .see-more,
+.more-all .pay,
+.more-all .event,
+.more-all .mess,
+.more-all .memory,
+.more-all .weather,
+.more-all .fav,
+.more-all .page,
+.more-all .see-less,
+.your-favourits>div
+{
+  margin: 5px 0;
+  padding: 10px ;
+  border-radius: 7px;
+}
+.menu-content .profile:hover,
+.menu-content .friends:hover,
+.menu-content .saved:hover,
+.menu-content .groups:hover,
+.menu-content .market:hover,
+.menu-content .video:hover,
+.menu-content .see-more:hover,
+.more-all .pay:hover,
+.more-all .event:hover,
+.more-all .mess:hover,
+.more-all .memory:hover,
+.more-all .weather:hover,
+.more-all .fav:hover,
+.more-all .page:hover,
+.more-all .see-less:hover,
+.your-favourits>div:hover
+{
+  background-color: #a9a9a933;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.menu-content i
+{
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: highlight;
+}
+.your-favourits >span
+{
+  color: white;
+}
+
+/* end content  */
+/* start page*/
+
+.stories
+{
+  overflow: hidden;
+}
+.story,
+.story-user
+{
+  width: 6.9vw;
+  background-color: #a9a9a933;
+  height: 25vh;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+
+.story:nth-child(1)
+{
+  background-image: url("../imgs/m-story1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.story:nth-child(2)
+{
+  background-image: url("../imgs/m-story2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.story:nth-child(3)
+{
+  background-image: url("../imgs/m-story3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.story:nth-child(4)
+{
+  background-image: url("../imgs/m-story4.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story .name-user
+{
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: right;
+}
+.story-user .user-create-story
+{
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}
+.story-user img
+{
+
+  border-radius: 12px 12px 0 0;
+
+}
+.story-user i
+{
+  font-size: 18px;
+  background-color: blue;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  border: 3px solid #a9a9a946;
+  position: absolute;
+  right: 35%;
+  top: 65%;
+}
+
+.story img
+{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 3px solid dodgerblue;
+}
+.create-post,
+.messenger .birthdays
+{
+  background-color: #a9a9a933;
+  border-radius: 12px;
+  padding: 15px;
+}
+.create-post .text
+{
+  border-bottom: 1px solid #ddd;
+}
+.fa-face-grin
+{
+  color: gold;
+  font-size: 18px;
+}
+.fa-image
+{
+  color: green;
+  font-size: 18px;
+}
+.live .fa-video
+{
+  color: red;
+  font-size: 18px;
+}
+.emoji,
+.photo,
+.live
+{
+width: 35%;
+text-align: center;
+border-radius: 10px;
+cursor: pointer;
+padding: 5px 8px;
+}
+.emoji:hover,
+.photo:hover,
+.live:hover
+{
+background-color: #a9a9a933;
+transition: 0.3s ease-in-out;
+}
+.create-room
+{
+  background-color: #a9a9a933;
+  border-radius: 12px;
+ position: relative;
+ overflow: hidden;
+}
+.btn2
+{
+  padding: 7px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 2px solid highlight;
+  color: white;
+}
+.create-room .fa-video
+{
+  color:highlight;
+}
+.btn1,
+.btn3
+{
+  z-index: 10000;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 10px;
+  border: none;
+  color: white;
+  background-color: #a9a9a9;
+}
+/*
+.btn1:hover,
+.btn3:hover
+{
+  background-color: #a9a9a933;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
+}
+*/
+.btn3
+{
+  left: -20px;
+}
+.post-1
+{
+  background-color: #a9a9a933;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.more-all
+{
+  display: none;
+}
+.see-more
+{
+  display: flex;
+}
+
+/*end page*/
